@@ -27,7 +27,7 @@ int	built_cd(char **argv)
     if (chdir(argv[1]) != 0) 
 	{
         perror("chdir");
-        exit(EXIT_FAILURE);
+        exit(1);
     }
     return 0;
 }
